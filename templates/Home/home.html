@@ -1,0 +1,122 @@
+<!-- REPORTS PAGE -->
+
+<!DOCTYPE html>
+<html class="html">
+
+
+<!-- METADATA -->
+    <head>
+        <title>Internet Cafe System</title>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/static/styles/style.css">
+    </head>
+
+
+<!-- TITLE -->
+    <header class="header">
+        <caption>&nbsp;INTERNET CAFE SYSTEM<br /></caption>
+    </header>
+
+
+<!-- CONTENT -->
+    <body class="body">
+        <div class="wrapper">
+
+            <!-- Modules -->
+            <div class="box box1">
+                <div class="nested">
+                    <!-- This is the Current Page -->
+                    <div class="current">
+                        <br />
+                        <img src="/static/images/home.png" width=15 length=15 />
+                        <a href="{{ url_for('home') }}">
+                        Home
+                        </a>
+                    </div>
+                    <div>
+                        <br />
+                        <img src="/static/images/account.png" width=15 length=15 />
+                        <a href="{{ url_for('account') }}">
+                        Account
+                        </a>
+                    </div>
+                    <div>
+                        <br />
+                        <img src="/static/images/terminal.png" width=15 length=15 />
+                        <a href="{{ url_for('terminal') }}">
+                        Terminal
+                        </a>
+                    </div>
+                    <div>
+                        <br />
+                        <img src="/static/images/payment.png" width=15 length=15 />
+                        <a href="{{ url_for('payment') }}">
+                        Payment
+                        </a>
+                    </div>
+                    <div >
+                        <br />
+                        <img src="/static/images/message.png" width=15 length=15 />
+                        <a href="{{ url_for('message') }}">
+                        Message
+                        </a>
+                    </div>
+                    <div>
+                        <br />
+                        <img src="/static/images/reports.png" width=15 length=15 />
+                        <a href="{{ url_for('report') }}">
+                        Reports
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Home -->
+            <div class="box box3">
+                <div class="home">   
+                    <h1>HOME PAGE</h1>
+                    <form method="post" action="{{url_for('logout')}}">
+                        <label>
+                            <input class="logout" type="submit" value="Account Settings">
+                        </label>
+                        <label>
+                            <input class="logout" type="submit" value="Log Out">
+                        </label>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Table -->
+            <div class="box box2">
+                <table class="table">
+                    <tr>
+                        <th>PC</th>
+                        <th>Account</th>
+                        <th>Start Time</th>
+                        <th>Duration</th>
+                        <th>Total</th>
+                    </tr>
+
+                    &nbsp;&nbsp;
+                    {%for data in records%}
+                    <tr>
+                        <td>{{data['pc']}}</td>
+                        <td>{{data['account']}}</td>
+                        <td>{{data['start_time']}}</td>
+                        <td>{{data['duration']}}</td>
+                        <td>{{data['total']}}</td>
+                    </tr>
+                    {%endfor%}
+                </table>
+            </div>
+
+        </div>
+    </body>
+
+<!-- END -->
+</html>
+
