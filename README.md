@@ -1,4 +1,4 @@
-# Internet-Cafe-Management-Software
+# Internet Cafe Management Software
 
 <p align="center">
   <img src="images/sample.png" width="480">
