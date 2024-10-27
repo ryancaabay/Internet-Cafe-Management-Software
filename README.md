@@ -1,3 +1,12 @@
 # Internet-Cafe-Management-Software
 
-There are many users who are visiting internet cafes and manual processes are used for managing user details and transaction management that are updated in records. Here in the Philippines, owners and staff used to record all their financial reports using a log book where they have to assist their customers to their respective terminals and ask them how many hours they would like to consume in using the computer or if they want an open hour. To meet the study objectives, the Internet Cafe System was used and developed in order to be computerized and information is automatically updated on the database. This kind of system is capable of handling any number of workstations, makes it easier for the owners to handle their business much easier and without needing to hire many staff. 
+<p align="center">
+  <img src="images/sample.png" width="480">
+</p>
+
+Authors: [Ryan Caabay](https://www.linkedin.com/in/ryancaabay/) · [Kurt Jayson Zacarias](https://www.linkedin.com/in/kurt-jayson-zacarias-982150b1/)
+
+This code implementation, focusing on an Internet Cafe Management System, was developed as a prerequisite for our course Software Engineering 1. In many internet cafes, manual processes are still used to manage user details and transaction records. Here in the Philippines, owners and staff typically record all financial reports in a logbook. They assist customers by assigning them to terminals and asking how many hours they wish to use the computer or if they prefer an open-hour session.
+
+To satisfy this essential course requirement and meet the study objectives, the Internet Cafe System was designed to automate these processes and update information in the database automatically. The system can manage any number of workstations, enabling business owners to streamline operations without the need for additional staff.
+
