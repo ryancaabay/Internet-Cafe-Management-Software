@@ -1,7 +1,7 @@
 # Internet Cafe Management Software
 
 <p align="center">
-  <img src="images/sample.png" width="480">
+  <img src="static/images/sample.png" width="480">
 </p>
 
 Authors: [Ryan Caabay](https://www.linkedin.com/in/ryancaabay/) · [Kurt Jayson Zacarias](https://www.linkedin.com/in/kurt-jayson-zacarias-982150b1/)
